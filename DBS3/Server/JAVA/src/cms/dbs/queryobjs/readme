@@ -1,0 +1,3 @@
+This directory contains Query Objects, that can be simple (one table read/write) or complex (multi table read/write based on views or complex queries).
+
+Query Objects receives Data Objects and Writes/Returns Data Objects

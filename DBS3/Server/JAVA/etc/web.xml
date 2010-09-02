@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<web-app id="WebApp_ID" version="2.4"  
+            xmlns="http://java.sun.com/xml/ns/j2ee"  
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+            xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee  
+                 http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">  
+
+   <display-name>Fantastic Dataset Bookkeeping Service</display-name>  
+
+        <session-config>
+                <session-timeout>300</session-timeout>    <!-- 300 minutes -->
+        </session-config>
+
+   <!-- Application class name -->  
+   <context-param>  
+      <param-name>org.restlet.application</param-name>  
+      <param-value>  
+         cms.dbs.servlets.DBSServlet
+      </param-value>  
+   </context-param>  
+  
+   <!-- Restlet adapter -->  
+   <servlet>  
+      <servlet-name>DBSServlet</servlet-name>  
+      <servlet-class>  
+         com.noelios.restlet.ext.servlet.ServerServlet  
+      </servlet-class>  
+   </servlet>  
+  
+   <!-- Catch all requests -->  
+   <servlet-mapping>  
+      <servlet-name>DBSServlet</servlet-name>  
+      <url-pattern>/*</url-pattern>  
+   </servlet-mapping>  
+
+        <resource-ref>
+                <description>
+                        This is the refererence to the Oracle data source we
+                        use to talk to the database configured in server.xml.
+                </description>
+                <res-ref-name>jdbc/dbs</res-ref-name>
+                <res-type>javax.sql.DataSource</res-type>
+                <res-auth>Container</res-auth>
+        </resource-ref>
+
+
+
+</web-app>  
+

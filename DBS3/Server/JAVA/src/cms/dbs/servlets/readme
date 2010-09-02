@@ -1,0 +1,1 @@
+This directory contains servlets, servlets will receive user calls and will create Data Objects and invoke APIs

@@ -1,0 +1,33 @@
+<Context path="/servlet/DBSServlet" docBase="DBSServlet" debug="5" reloadable="true" crossContext="true">
+
+        <!--Resource name="jdbc/dbs"
+                auth="Container"
+                type="javax.sql.DataSource"
+                maxActive="10"
+                maxIdle="5"
+                maxWait="-1"
+                username="cmsdbs"
+                password=""
+                driverClassName="org.gjt.mm.mysql.Driver"
+                url="jdbc:mysql://cmssrv48:3307/DBS_2_0_7?autoReconnect=true"/-->
+
+        <Resource name="jdbc/dbs"
+                auth="Container"
+                type="javax.sql.DataSource"
+                maxActive="0"
+                maxIdle="1"
+                maxWait="-1"
+                username="CMS_DBS3_OWNER"
+                password="xxxxxxxxx"
+                removeAbandoned="true"
+                removeAbandonedTimeout="100"
+                driverClassName="oracle.jdbc.driver.OracleDriver"
+                url="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=CD)(PROTOCOL=TCP)(Host=uscmsdb03.fnal.gov)(Port = 1521)))(CONNECT_DATA=(SID=cmscald)(GLOBAL_NAME=cmscald.fnal.gov)))"/>
+
+    <SchemaOwner schemaowner=""/>
+    <!-- Possible vales are schema_owner, EMPTY STRING and __MYSQL__ /-->
+    <SupportedSchemaVersion schemaversion="DBS_1_1_5" />
+    <SupportedClientVersions clientversions="DBS_1_0_5" />
+
+</Context>
+

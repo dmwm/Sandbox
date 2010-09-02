@@ -1,0 +1,13 @@
+/auto_inc_trigs.sql/1.7/Thu Jul 22 14:46:01 2010//
+/create-mysql-schema.sql/1.10/Tue Aug 31 19:43:09 2010//
+/create-oracle-schema.sql/1.14/Tue Aug 31 19:43:09 2010//
+/create-seqTb-mysql.sql/1.11/Wed Jul 28 17:18:15 2010//
+/drop-mysql-schema.sql/1.3/Fri Feb 12 16:24:34 2010//
+/drop-oracle-schema.sql/1.7/Thu Jul 22 14:54:15 2010//
+/generate-schema-deployable.py/1.2/Tue Jan 19 19:20:20 2010//
+/initialize-mysql-seq.sql/1.1/Wed Jul 28 17:16:56 2010//
+/initialize-mysql.sql/1.6/Tue Jul 13 12:13:42 2010//
+/initialize-template.sql/1.5/Thu Jul 22 18:49:06 2010//
+/redeploy.sql/1.1.1.1/Wed Aug 26 17:39:12 2009//
+/schema-deploy.sh/1.1/Tue Dec  8 15:50:46 2009//
+D

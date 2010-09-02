@@ -1,0 +1,1 @@
+This directory contains contains data objects, each data object is basically contains a JSONObject , that holds data. The servelets create these JSONObjects directly from user sent JSON.

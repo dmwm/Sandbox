@@ -1,0 +1,1 @@
+This directory contains  Business Objects, each object representing an atomic operation done in an atomic transaction. Biz objs can create one or more Query Objects.
